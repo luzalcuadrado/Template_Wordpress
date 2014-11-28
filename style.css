@@ -1,0 +1,69 @@
+/*
+Theme Name:  Nombre del sitio
+Description: Descripción del sitio
+Theme URI: http://wpcandy.com/
+Version: 1.0
+Author: Kike Taniguchi
+Author URI: http://kikemonk.com/
+*/
+
+/* ======= ALINEACIONES ======= */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hide {
+    display: none;
+}
+ 
+.show {
+    display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+
+/*======= MEDIA QUERIES =======*/
+
+/* == iPhone 3== */
+@media (max-width: 360px){
+	
+}
+
+/* == Smartphones == */
+@media (max-width:480px){
+	
+}
+
+/* == Tablet Vertical == */
+@media (max-width:760px){
+	
+}
+
+/* == Tablet Horizontal == */
+@media (max-width:1024px){
+	
+}
+
+/* == Pantalla standard == */
+@media (max-width:1280px){
+	
+}

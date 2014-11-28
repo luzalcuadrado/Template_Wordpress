@@ -13,8 +13,7 @@
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 		<script src="<?php bloginfo('template_url'); ?>/assets/js/prefixfree.min.js" type="text/javascript"></script>
 		<script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="<?php bloginfo('template_url'); ?>/assets/css3-mediaqueries.js"></script>
-		<script src="<?php bloginfo('template_url'); ?>/assets/respond.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/assets/js/css3-mediaqueries.js"></script>
 		
 		<!--[if lt IE 11]>
 		 <script src="<?php bloginfo('template_url'); ?>/assets/js/html5shiv.js" type="text/javascript"></script>

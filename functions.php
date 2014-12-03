@@ -16,12 +16,23 @@
 
 	// Soporte para sidebar
 	if ( function_exists('register_sidebar') )
-		register_sidebar(array('name'=>'nombre_de_la_sidebar',
-		'before_title' => '<div class="nombre_de_la_clase_titulo">',
-		'after_title' => '</div>',
+		register_sidebar(array(
+        'id' => 'sidebar-main', // Sirve para mandarla a llamar en los templates usando dynamic_sidebar($id);
+        'name' => 'Nombre de la sidebar',
+        'description' => 'Una descripción para reconocer la sidebar',
+		'before_title' => '<h4 class="nombre_de_la_clase_titulo">',
+		'after_title' => '</h4>',
 		'before_widget' => '<div class="contenedor_del_widget">',
 		'after_widget' => '</div>',
 	));
+	
+	// añadir una clase first y una last a los menús generados por wp_nav_menu
+	function add_first_and_last($output) {
+	    $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
+	    $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
+	    return $output;
+	}
+	add_filter('wp_nav_menu', 'add_first_and_last');
 	
 	// shortcode in widgets
 	if ( !is_admin() ){

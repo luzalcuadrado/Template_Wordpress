@@ -1,11 +1,19 @@
+<?php
+	// Variables con useragents para mobile
+	$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+	$ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
+	$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+?>
+
 <!--DOCTYPE html-->
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="<?php bloginfo( 'charset' ); // permite cambiar el charset desde wp, por default está en utf-8 ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 		<?php wp_head(); ?>
+		<link rel="apple-touch-icon" href="/images/custom_icon.png"/><!-- 114x114 icono para iPhones y iPads -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">

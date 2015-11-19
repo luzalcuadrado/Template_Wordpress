@@ -14,6 +14,6 @@ En el functions.php encontrarán pre cargado el soporte de thumbnails, menús y 
 
 También trae algunas modificaciones del editor TinyMCE default y poco a poco iré agregando más cosas que me parezcan útiles.
 
-En el archivo index.php van a encontrar algunos scripts muy útiles pero que si los cargan tal cuál están no les servirán por favor lean los comentarios para saber a que me refiero.
+Tiene todas las secciones básicas para hacer el template ya con los loops y todo incluído
 
 Si tienen dudas o desean colaborar pueden contactarme en kiketani@kikemonk.com
